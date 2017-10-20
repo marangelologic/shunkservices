@@ -5,9 +5,11 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @Component
 @Path("api")
+@CrossOrigin("*")
 public class HealthCheck {
 	
 	@GET
